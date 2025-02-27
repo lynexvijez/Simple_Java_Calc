@@ -2,25 +2,25 @@ import java.io.*;
 import java.util.Scanner;
 public class SimpleCalc{
     public static void main(String[]args){
-        Scanner Scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("      LYNEX CALCULATOR");
         System.out.println("   choose your operation(*,/,+,-)");
-        String operation= Scanner.nextLine();
+        String operation= scanner.nextLine();
         System.out.println("you chose "+operation);
         switch (operation){
             case "*":
             System.out.println("Enter first number");
-            int num1= Scanner.nextInt();
+            int num1= scanner.nextInt();
             System.out.println("Enter second number");
-            int num2= Scanner.nextInt();
+            int num2= scanner.nextInt();
             int result= num1*num2;
             System.out.println("The result is: "+result);
             break;
             case "/":
             System.out.println("Enter first number");
-            int num3= Scanner.nextInt();
+            int num3= scanner.nextInt();
             System.out.println("Enter second number");
-            int num4= Scanner.nextInt();
+            int num4= scanner.nextInt();
             if(num4==0){
                 System.out.print("dividion by 0 is not sciantifically correct!!");
             }
@@ -31,17 +31,17 @@ public class SimpleCalc{
             break;
             case "+":
             System.out.println("Enter first number");
-            int num5= Scanner.nextInt();
+            int num5= scanner.nextInt();
             System.out.println("Enter second number");
-            int num6= Scanner.nextInt();
+            int num6= scanner.nextInt();
             int result3= num5+num6;
             System.out.println("The result is: "+result3);
             break;
             case "-":
             System.out.println("Enter first number");
-            int num7=Scanner.nextInt();
+            int num7=scanner.nextInt();
             System.out.println("Enter second number");
-            int num8=Scanner.nextInt();
+            int num8=scanner.nextInt();
             int result4=num7-num8;
             System.out.println("result is :"+result4);
             break;
@@ -50,6 +50,6 @@ public class SimpleCalc{
             break;
 
         }
-        Scanner.close();
+        scanner.close();
     }
 }
